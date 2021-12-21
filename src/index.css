@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header .headline .title, .second-title{
+    text-shadow: 2px 3px #f1f1f1;
+} */
+@layer utilities{
+    .text-shadow{
+        text-shadow: 2px 3px #f1f1f1;
+    },
+    .input-style{
+        @apply border-solid rounded-md border-2 border-gray;
+    },
+    .icons-style{
+       @apply bg-white rounded-full text-brown mx-2 hover:bg-yellow ;
+    }
+}
