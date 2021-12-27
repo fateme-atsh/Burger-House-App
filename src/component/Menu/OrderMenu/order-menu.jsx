@@ -7,7 +7,7 @@ const OrderMenu = () => {
         <section className="order-menu grid grid-cols-3 gap-x-4 sm:grid-cols-1  ">
             <div className="sm:py-8 shadow-sm">
                 <div >
-                    <img src={Burger1} className="mx-auto block w-3/4" alt=''/>
+                    <img src={Burger1} className="mx-auto block w-3/4" alt='burger'/>
                     <div className="px-3 py-4 text-brown text-center">
                         <h3 className="font-bold text-2xl">LOREM IPSUM DOLOR</h3>
                         <p className="py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officia.</p>
@@ -19,7 +19,7 @@ const OrderMenu = () => {
             </div>
             <div className="sm:py-8 shadow-sm">
                 <div>
-                    <img src={Burger2} className="mx-auto block w-3/4" alt=''/>
+                    <img src={Burger2} className="mx-auto block w-3/4" alt='burger'/>
                     <div className="px-3 py-4 text-brown text-center">
                         <h3 className="font-bold text-2xl">LOREM IPSUM DOLOR</h3>
                         <p className="py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officia.</p>
@@ -31,7 +31,7 @@ const OrderMenu = () => {
             </div>
             <div className="sm:py-8 shadow-sm">
                 <div>
-                    <img src={Burger1} className="mx-auto block w-3/4" alt=''/>
+                    <img src={Burger1} className="mx-auto block w-3/4" alt='burger'/>
                     <div className="px-3 py-4 text-brown text-center">
                         <h3 className="font-bold text-2xl">LOREM IPSUM DOLOR</h3>
                         <p className="py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officia.</p>
