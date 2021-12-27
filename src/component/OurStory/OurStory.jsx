@@ -21,7 +21,7 @@ const Ourstory =() =>{
                     </div>
                 </div>
                 <figure className='md:py-24'>
-                    <img src={FoodImg} className="w-full md:h-full"/>
+                    <img src={FoodImg} className="w-full md:h-full" alt=''/>
                 </figure>
             </div>
         </section>
