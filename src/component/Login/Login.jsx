@@ -18,7 +18,7 @@ const Login = () => {
                     <button className='hover:bg-yellow focus:bg-white py-5'onClick={handleClick}>Sign Up</button>
                 </div>
                 <div>
-                    {newUser == true ? 
+                    {newUser === true ? 
                     <WelcomeBack /> : 
                     <SignUp />}
                 </div>
