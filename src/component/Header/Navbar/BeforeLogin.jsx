@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import User from '../../../icons/user';
+import User from '../../../icons/User';
 
 
 const BeforeLogin = () => {
