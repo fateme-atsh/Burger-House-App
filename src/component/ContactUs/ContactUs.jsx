@@ -1,10 +1,17 @@
-import React from 'react';
-import DatePicker from 'react-datepicker2';
+import React, { useState } from 'react';
 import Bottle from '../../img/Bottle.png';
 import Burger from '../../img/Burger.png';
 import Plate from '../../img/food-plate.png';
 
 const Reservation = () => {
+    const [myDateTime, setMyDateTime] = useState()
+
+    const handleChange = (event) => {
+        const newState = {};
+        newState[event.target.name] = event.target.value;
+        setMyDateTime(newState);
+    };
+
     return (
         <section className="flex my-12 relative">
 
@@ -18,13 +25,12 @@ const Reservation = () => {
                     <h2 className="font-semibold text-2xl sm:text-lg">فرم رزرو</h2><br />
                     <h1 className="font-black text-6xl sm:text-2xl">میز خود را رزرو کنید</h1>
                 </div>
+
                 <form className="my-5 sm:grid grid-cols-1 w-full">
                     <input type="text" placeholder="نام رزرو کننده" name="name" className="input-style w-1/3 py-2 px-3 my-4 mx-2 sm:w-11/12" />
                     <input type="email" placeholder="ایمیل" name="email" className="input-style w-1/3 py-2 px-3 mx-2 my-4 sm:w-11/12" />
                     <br />
-                    <input placeholder="تاریخ " className="input-style w-1/3 py-2 px-3 mx-2 my-4 sm:w-11/12">
-                        <DatePicker />
-                    </input>
+                    <input type="date" placeholder="تاریخ " className="input-style w-1/3 py-2 px-3 mx-2 my-4 sm:w-11/12" />
                     <input type="time" placeholder="ساعت " className="input-style w-1/3 py-2 px-3 mx-2 my-4 sm:w-11/12" />
                     <br />
                     <input type="number" placeholder="تعداد " className="input-style w-1/3 py-2 px-3 mx-2 my-4 sm:w-11/12" />
@@ -35,7 +41,7 @@ const Reservation = () => {
             <div className="overflow-x-hidden sm:hidden">
                 <img src={Plate} className="w-80 absolute -right-40 md:-right-44" alt='burger' />
             </div>
-        </section>
+        </section >
     );
 }
 export default Reservation;
