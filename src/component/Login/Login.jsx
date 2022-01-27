@@ -12,10 +12,16 @@ const Login = () => {
 
     return (
         <section className='bg-brown-light m-5 py-5'>
-            <div className='w-3/6 h-1/4 bg-white mx-auto'>
+            <div className='w-3/6 h-1/4 bg-white mx-auto rounded-md'>
                 <div className='grid grid-cols-2'>
-                    <button className='bg-light-gray hover:bg-yellow focus:bg-white py-5' onClick={(event)=>handleClick(event,'login')}>Login</button>
-                    <button className='bg-light-gray hover:bg-yellow focus:bg-white'onClick={handleClick}>Sign Up</button>
+                    <button 
+                    className='bg-light-gray hover:bg-yellow 
+                    focus:bg-white 
+                    py-5 rounded-t-md' onClick={(event)=>handleClick(event,'login')}>ورود</button>
+                    <button 
+                    className='bg-light-gray hover:bg-yellow 
+                    focus:bg-white 
+                    rounded-t-md'onClick={handleClick}>ثبت نام</button>
                 </div>
                 <div>
                     {newUser === true ? 
